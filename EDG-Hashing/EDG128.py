@@ -7,7 +7,7 @@ def shuffle(anything):
   return b"".join(chunks[o] for o in order)
 
 def edg128(input):
-  edg = int.from_bytes("EDG".encode("utf-8"), "big")
+  edg = int.from_bytes("EDG128".encode("utf-8"), "big")
   prime = 0x9E3779B185EBCA77
   if len(input) == 0:
     payload = b"\x00" * 16
